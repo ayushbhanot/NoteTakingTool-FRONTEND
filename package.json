@@ -1,0 +1,63 @@
+{
+  "name": "aitranscriptionapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/speech": "^6.7.0",
+    "@google-cloud/storage": "^7.12.1",
+    "@google-cloud/text-to-speech": "^5.4.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.1.0",
+    "axios": "^1.7.7",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.0",
+    "dotenv": "^16.4.5",
+    "fluent-ffmpeg": "^2.1.3",
+    "html2canvas": "^1.4.1",
+    "https-browserify": "^1.0.0",
+    "jspdf": "^2.5.1",
+    "openai": "^4.56.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.4",
+    "util": "^0.12.5",
+    "vm-browserify": "^1.1.2",
+    "web-vitals": "^2.1.4"
+  },"scripts": {
+  "start": "npm run start-client",
+  "start-client": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^9.0.1",
+    "react-app-rewired": "^2.2.1"
+  },
+  "babel": {
+    "presets": ["react-app"],
+    "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
