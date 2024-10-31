@@ -1,0 +1,110 @@
+body {
+    background-color: #f7f1e3; 
+    font-family: 'Georgia', serif; 
+}
+
+#notes-container {
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #faf3e0;
+    border: 1px solid #e1d8b4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-image: url('../assets/paper-texture.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Topic styling */
+.topic {
+    font-size: 2em; 
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+/* The container for the download button and instruction text */
+#bottom-right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    padding: 0 20px;
+}
+
+.note {
+    font-size: 1.6em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-left: 4px solid #d1a054;
+    background-color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    text-indent: 20px;
+    outline: none;
+    transition: background-color 0.3s ease;
+    caret-color: black;
+}
+
+.note:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #b08d57;
+}
+
+/* Note styling */
+.note {
+    font-size: 1.6em; 
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-left: 4px solid #d1a054; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    line-height: 1.6;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+    text-indent: 20px; 
+    outline: none;
+}
+
+/*Download Button */
+.download-btn {
+    padding: 16px 32px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Adjust spacing between the button and instruction text */
+}
+
+.download-btn:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Small instruction text */
+.instruction-text {
+    font-size: 1.8em; 
+    font-weight: bold; 
+    font-style: italic; 
+    text-decoration: underline; 
+    color: black; 
+    font-family: 'Times New Roman', serif;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
