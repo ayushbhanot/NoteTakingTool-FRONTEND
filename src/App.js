@@ -38,7 +38,7 @@ function App() {
             console.log("Sending final transcript to server:", finalTranscript);
 
             // Send the transcript to the backend for note generation
-            const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/transcribe';
+            const API_URL = process.env.REACT_APP_API_URL || 'https://note-taking-tool-backend.vercel.app/transcribe';
             const response = await axios.post(API_URL, { transcript: finalTranscript });
             const notes = response.data.notes;
 
